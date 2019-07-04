@@ -4,7 +4,7 @@
     <p>{{ address }}</p>
     <h2 class="hours">{{ hourshead }}</h2>
     <ul>
-      <li v-for="(value, key) in hours">{{ key }}: {{ value }}</li>
+      <!-- <li v-for="(value, key) in hours">{{ key }}: {{ value }}</li> -->
     </ul>
   </div>
 </template>
@@ -16,12 +16,12 @@ export default {
         Monday: "8AM - 6PM",
         Tuesday: "8AM - 6PM",
         Wednesday: "8AM - 6PM",
-        Thursday: "8AM - 6PM", 
+        Thursday: "8AM - 6PM",
         Friday: ""
       }
-      address: "1435 Woodroffe Avenue, Ottawa, Ontario. K2G 1V8, 613-7274723",
-      addhead: "Address", 
-      hourshead: "Hours of Operation"
+      // address: "1435 Woodroffe Avenue, Ottawa, Ontario. K2G 1V8, 613-7274723",
+      // addhead: "Address",
+      // hourshead: "Hours of Operation"
     };
   }
 };
