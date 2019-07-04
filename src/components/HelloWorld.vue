@@ -1,106 +1,43 @@
 <template>
-  <div class="hello">
-    <h1>{{ msg }}</h1>
-    <p>
-      For a guide and recipes on how to configure / customize this project,<br />
-      check out the
-      <a href="https://cli.vuejs.org" target="_blank" rel="noopener"
-        >vue-cli documentation</a
-      >.
-    </p>
-    <h3>Installed CLI Plugins</h3>
-    <ul>
-      <li>
-        <a
-          href="https://github.com/vuejs/vue-cli/tree/dev/packages/%40vue/cli-plugin-eslint"
-          target="_blank"
-          rel="noopener"
-          >eslint</a
-        >
-      </li>
-    </ul>
-    <h3>Essential Links</h3>
-    <ul>
-      <li>
-        <a href="https://vuejs.org" target="_blank" rel="noopener">Core Docs</a>
-      </li>
-      <li>
-        <a href="https://forum.vuejs.org" target="_blank" rel="noopener"
-          >Forum</a
-        >
-      </li>
-      <li>
-        <a href="https://chat.vuejs.org" target="_blank" rel="noopener"
-          >Community Chat</a
-        >
-      </li>
-      <li>
-        <a href="https://twitter.com/vuejs" target="_blank" rel="noopener"
-          >Twitter</a
-        >
-      </li>
-      <li>
-        <a href="https://news.vuejs.org" target="_blank" rel="noopener">News</a>
-      </li>
-    </ul>
-    <h3>Ecosystem</h3>
-    <ul>
-      <li>
-        <a href="https://router.vuejs.org" target="_blank" rel="noopener"
-          >vue-router</a
-        >
-      </li>
-      <li>
-        <a href="https://vuex.vuejs.org" target="_blank" rel="noopener">vuex</a>
-      </li>
-      <li>
-        <a
-          href="https://github.com/vuejs/vue-devtools#vue-devtools"
-          target="_blank"
-          rel="noopener"
-          >vue-devtools</a
-        >
-      </li>
-      <li>
-        <a href="https://vue-loader.vuejs.org" target="_blank" rel="noopener"
-          >vue-loader</a
-        >
-      </li>
-      <li>
-        <a
-          href="https://github.com/vuejs/awesome-vue"
-          target="_blank"
-          rel="noopener"
-          >awesome-vue</a
-        >
-      </li>
-    </ul>
+  <div>
+    <h1>{{ title }}</h1>
+    <img />
+    <p>{{ content }}</p>
   </div>
 </template>
 
 <script>
 export default {
-  name: "HelloWorld",
-  props: {
-    msg: String
+  data() {
+    return {
+      title: "Welcome to My View App",
+      img: "",
+      content:
+        "Lorem ipsum dolor sit amet, consectetur adipiscing elit. In quis ante ut dui accumsan tincidunt at id urna. Nullam fringilla massa ut venenatis tempus. Cras quam lectus, lacinia eget facilisis et, feugiat ut sapien. Mauris ultricies, magna a maximus euismod, nisl velit eleifend risus, vitae rutrum leo urna quis ex. Aliquam erat volutpat. Phasellus scelerisque ligula ut justo commodo hendrerit. Curabitur odio purus, condimentum tincidunt vulputate vitae, egestas sodales magna. Quisque ligula turpis, finibus a metus in, tincidunt ornare felis."
+    };
   }
 };
 </script>
 
 <!-- Add "scoped" attribute to limit CSS to this component only -->
-<style scoped lang="scss">
-h3 {
-  margin: 40px 0 0;
+<style lang="scss">
+h1 {
+  float: left;
+  margin-left: 120px;
+  color: blue;
+  font-size: 3rem;
+  width: 50%;
 }
-ul {
-  list-style-type: none;
-  padding: 0;
+
+#top-image {
+  height: 420px;
+  float: left;
+  margin-top: 20px;
+  margin-left: 120px;
 }
-li {
-  display: inline-block;
-  margin: 0 10px;
-}
-a {
-  color: #42b983;
+p {
+  float: right;
+  width: 50%;
+  text-align: left;
 }
 </style>
